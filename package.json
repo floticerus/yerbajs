@@ -1,0 +1,16 @@
+{
+  "name": "yerbajs",
+  "description": "simple javascript data management",
+  "version": "0.0.1",
+  "main": "lib/yerba-src.js",
+  "author": {
+    "name": "Kevin von Flotow"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kvonflotow/yerbajs.git"
+  },
+  "engines": {
+    "node": "*"
+  }
+}

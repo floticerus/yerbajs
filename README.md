@@ -1,12 +1,14 @@
-yerbajs
-=======
-
+# yerbajs
 simple data management for javascript designed to work in node.js and any web browser.
 
-node
----
-``` npm install yerbajs ```
+## node
+### installation
+`npm install yerbajs`
 
-browser
----
-``` <script src="yerba-min.js"></script> ```
+### usage
+```
+var yerba = require( 'yerbajs' );
+```
+
+## browser
+`<script src="yerba-min.js"></script>`

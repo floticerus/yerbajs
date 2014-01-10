@@ -9,4 +9,4 @@ node
 
 browser
 ---
-``` <script src="yerba.js"></script> ```
+``` <script src="yerba-src.js"></script> ```

@@ -1,7 +1,7 @@
 yerbajs
 =======
 
-simple data management for javascript designed to work in nodejs and any web browser.
+simple data management for javascript designed to work in node.js and any web browser.
 
 node
 ---

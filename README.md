@@ -1,5 +1,5 @@
 # yerbajs
-simple data management for javascript designed to work in node.js and any web browser.
+simple data management for javascript designed to work in node.js and (almost) any web browser.
 
 ## node
 ### installation

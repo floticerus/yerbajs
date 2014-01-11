@@ -1,7 +1,7 @@
 {
   "name": "yerbajs",
   "description": "simple javascript data management",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "main": "lib/yerba-node.js",
   "author": {
     "name": "Kevin von Flotow"

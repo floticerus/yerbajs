@@ -1,11 +1,12 @@
-
 /**
  * Module dependencies.
  */
 ( function () {
     var cluster = require( 'cluster' ),
-        // define yerba for all nodes, including master
-        yerba = require( '../../lib/yerba-node' );
+
+        // always define yerba for all nodes, including master
+        yerba = require( '../../lib/yerba-node' ),
+        yerbaTestPlugin = require( '../../lib/yerba-example-plugin' )( yerba );
 
     if ( cluster.isMaster ) {
         // var yerbaTest = new yerba( [ 'yada', 'yada', { 'mixed': 'type' }, 5 ] );

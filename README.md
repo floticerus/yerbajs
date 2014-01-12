@@ -3,7 +3,9 @@ simple data management for javascript designed to work in node.js and (almost) a
 
 ## node
 ### installation
-`npm install yerbajs`
+```javascript
+npm install yerbajs
+```
 
 ### usage
 ```javascript
@@ -11,7 +13,9 @@ var yerba = require( 'yerbajs' );
 ```
 
 ## browser
-`<script src="yerba-min.js"></script>`
+```html
+<script src="yerba-min.js"></script>
+```
 yerba is added to window.yerba, which is available globally as yerba
 
 ## basic example

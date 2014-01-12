@@ -5,17 +5,24 @@ simple data management for javascript designed to work in node.js and (almost) a
 ### installation
 `npm install yerbajs`
 
-### usage
+### browser
+`<script src="yerba-min.js"></script>`
+
+## usage
 
 ```javascript
 var yerba = require( 'yerbajs' );
 
-var parent = new yerba();
+var test = new yerba();
 
-var child = new yerba([ 'string', 36, { 'foo': 'bar' }, true, [ 1, 2, 3 ] ]);
+test.add({
+	'foo': 'bar'
+});
 
-parent.add( child );
+test.add({
+	'foo': 'not bar'
+});
+
+// returns the first object added
+var results = test.find({ 'foo': 'bar' });
 ```
-
-## browser
-`<script src="yerba-min.js"></script>`

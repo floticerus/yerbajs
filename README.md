@@ -10,8 +10,9 @@ simple data management for javascript designed to work in node.js and (almost) a
 var yerba = require( 'yerbajs' );
 ```
 
-### browser
+## browser
 `<script src="yerba-min.js"></script>`
+yerba is added to window.yerba, which is available globally as yerba
 
 ## basic example
 ```javascript

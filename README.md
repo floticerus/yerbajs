@@ -16,7 +16,7 @@ var yerba = require( 'yerbajs' );
 ```html
 <script src="yerba-min.js"></script>
 ```
-yerba is added to window.yerba, which is available globally as yerba
+yerba is added to `window.yerba`, which is available globally as `yerba`
 
 ## basic example
 ```javascript

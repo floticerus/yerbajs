@@ -5,14 +5,16 @@ simple data management for javascript designed to work in node.js and (almost) a
 ### installation
 `npm install yerbajs`
 
+### usage
+```javascript
+var yerba = require( 'yerbajs' );
+```
+
 ### browser
 `<script src="yerba-min.js"></script>`
 
-## usage
-
+## basic example
 ```javascript
-var yerba = require( 'yerbajs' );
-
 var test = new yerba();
 
 test.add({

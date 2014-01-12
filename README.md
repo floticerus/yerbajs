@@ -6,8 +6,15 @@ simple data management for javascript designed to work in node.js and (almost) a
 `npm install yerbajs`
 
 ### usage
-```
+
+```javascript
 var yerba = require( 'yerbajs' );
+
+var parent = new yerba();
+
+var child = new yerba([ 'string', 36, { 'foo': 'bar' }, true, [ 1, 2, 3 ] ]);
+
+parent.add( child );
 ```
 
 ## browser

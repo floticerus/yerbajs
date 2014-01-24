@@ -33,5 +33,10 @@ test.add({
 });
 
 // returns the first object added
-var results = test.find({ 'foo': 'bar' });
+test.find({
+	'query': { 'foo': 'bar' },
+	'done': function ( doc ) {
+		// doc holds an array containing matches
+	}
+});
 ```

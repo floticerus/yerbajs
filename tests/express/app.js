@@ -1,12 +1,12 @@
 /**
  * Module dependencies.
  */
-( function () {
+;( function () {
     var cluster = require( 'cluster' ),
 
         // always define yerba for all nodes, including master
-        yerba = require( '../../lib/yerba-node' ),
-        yerbaTestPlugin = require( '../../lib/yerba-example-plugin' )( yerba );
+        yerba = require( '../../lib/node/yerba-node' );
+        //yerbaTestPlugin = require( '../../lib/node/yerba-example-plugin' )( yerba );
 
     if ( cluster.isMaster ) {
         // var yerbaTest = new yerba( [ 'yada', 'yada', { 'mixed': 'type' }, 5 ] );
@@ -53,6 +53,24 @@
 
         app.get('/', routes.index);
         app.get('/users', user.list);
+
+        //yerba.brew('test', function (data) {
+        //    console.log(data);
+        //});
+
+        // wait for yerba to be ready before firing anything
+        yerba.ready( function () {
+            yerba.brew( [ 'test' ], function ( instance ) {
+                console.log( instance._yerbaId );
+                //instance.add('added', function () {
+                //    console.log( instance[ 1 ] );
+                //});
+            });
+        });
+
+        //setInterval( function () {
+         //   console.log( yerba.yerbas() );
+        //}, 1000 );
 
         http.createServer(app).listen(app.get('port'), function(){
             console.log('Express server listening on port ' + app.get('port'));

@@ -1,7 +1,15 @@
 # yerbajs
 simple data management for javascript designed to work in node.js and (almost) any web browser.
 
+## browser
+```html
+<script src="yerba-min.js"></script>
+```
+yerba is added to `window.yerba`, which is available globally as `yerba`
+
 ## node
+currently does not work properly in node - attempting to have builtin cluster support.
+
 ### installation
 ```javascript
 npm install yerbajs
@@ -11,12 +19,6 @@ npm install yerbajs
 ```javascript
 var yerba = require( 'yerbajs' );
 ```
-
-## browser
-```html
-<script src="yerba-min.js"></script>
-```
-yerba is added to `window.yerba`, which is available globally as `yerba`
 
 ## basic example
 ```javascript
